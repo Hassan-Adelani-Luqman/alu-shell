@@ -1,3 +1,2 @@
 #!/bin/bash
-if [ -d /tmp/my_first_directory ]; then rm -rf /tmp/my_first_directory; else echo "/tmp/my_first_directory: cannot open '/tmp/my_first_directory' (No such file or directory)"; fi
-
+rm -rf /tmp/my_first_directory
