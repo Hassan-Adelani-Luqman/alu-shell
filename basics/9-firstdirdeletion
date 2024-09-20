@@ -1,2 +1,9 @@
 #!/bin/bash
-rm -rf /tmp/my_first_directory
+DIRECTORY="/tmp/my_first_directory"
+
+if [ -d "$DIRECTORY" ]; then
+    rm -rf "$DIRECTORY"
+    echo "Directory $DIRECTORY has been deleted."
+else
+    echo "$DIRECTORY: cannot open '$DIRECTORY' (No such file or directory)"
+fi
